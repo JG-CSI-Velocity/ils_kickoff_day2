@@ -1,0 +1,33 @@
+# ===========================================================
+# ILS Kickoff Analysis Configuration
+# ===========================================================
+# HOW TO USE:
+#   1. Copy this file to config.yaml
+#   2. Change "data_file" to point to your CSV
+#   3. Run: make run  (or: python -m ils_kickoff)
+# ===========================================================
+
+# ---- REQUIRED ----
+data_file: "data/REPLACE_WITH_YOUR_FILENAME.csv"
+
+# ---- OPTIONAL (defaults work for most clients) ----
+# client_id: "1774"           # Auto-extracted from filename if omitted
+# client_name: "Client 1774"  # Used in report titles
+output_dir: "output/"
+
+outputs:
+  excel: true
+  powerpoint: true
+  html_charts: false
+
+# ---- ADVANCED (you probably don't need to change these) ----
+# pptx_template: "templates/company_template.pptx"
+# charts:
+#   theme: "plotly_white"
+#   colors: ["#1B365D", "#4A90D9", "#7BC67E", "#F5A623", "#D0021B", "#8B572A"]
+#   width: 900
+#   height: 500
+# nsf_bins: [-1, 0, 6, 12, 24, 36, 48, .inf]
+# nsf_labels: ["0", "1-6", "7-12", "13-24", "25-36", "37-48", "49+"]
+# deposit_bins: [-1, 0, 1, 2, 5, 10, .inf]
+# deposit_labels: ["0", "1", "2", "3-5", "6-10", "10+"]

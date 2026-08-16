@@ -1,0 +1,36 @@
+# Client data -- NEVER commit
+data/
+*.csv
+*.tsv
+
+# Generated reports -- contain client data
+output/
+*.xlsx
+*.pptx
+*.png
+*.html
+
+# Runtime config (contains file paths and client identifiers)
+config.yaml
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+dist/
+build/
+
+# Environment and secrets
+.env
+.env.*
+
+# OS artifacts
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp

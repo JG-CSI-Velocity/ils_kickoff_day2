@@ -1,0 +1,19 @@
+[project]
+name = "ils-kickoff"
+version = "1.0.0"
+description = "ILS Kickoff banking data analysis and report generation tool"
+requires-python = ">=3.10"
+
+[project.scripts]
+ils-kickoff = "ils_kickoff.cli:app"
+
+[tool.ruff]
+target-version = "py310"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "--tb=short -q"
